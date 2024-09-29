@@ -18,12 +18,6 @@ The VLSI Calculator is capable of adding or subtracting two 4-bit numbers. The i
 - **SRAM Memory**: The SRAM memory consists of 64 memory cells arranged in a 16-row by 4-column matrix. Each row represents a 4-bit number, and the decoder selects which row to read or write based on the user's input.
 - **Full Adder and Subtractor**: These logic components perform addition and subtraction of two 4-bit numbers. The results are passed through the MUX and stored in the memory.
 
-### Block Diagram
-
-Below is a high-level block diagram of the system:
-
-+------------------+ +--------------------+ | User Input | ---> | Decoder (4x16) | +------------------+ +--------------------+ | v +-----------------+ +------------------+ | SRAM (16x4) | <----> | Full Adder/Subtr. | +-----------------+ +------------------+ | v +--------------------+ | Output to SRAM | +--------------------+
-
 
 ### Workflow:
 
